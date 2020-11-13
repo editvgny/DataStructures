@@ -18,7 +18,6 @@ class Main
         $bst->search(15);
         $bst->search(4);
         $bst->search(20);
-
     }
 }
 

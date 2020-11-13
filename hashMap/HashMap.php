@@ -98,4 +98,9 @@ class HashMap
             }
         }
     }
+
+    public function printHashMap()
+    {
+        print_r($this->getHashMap());
+    }
 }

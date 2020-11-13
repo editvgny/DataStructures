@@ -61,7 +61,6 @@ class BinarySearchTree
         return $rightTree;
     }
 
-
     private function printTree($array)
     {
         foreach ($array as $item) {
@@ -77,18 +76,15 @@ class BinarySearchTree
         $result = 0;
 
         while ($result == 0) {
-
             if ($value == $actualNode->getValue()) {
                 $result = 1;
             }
-
             if ($value < $actualNode->getValue()) {
                 $actualNode = $actualNode->getLeft();
                 if ($actualNode == null) {
                     $result = 2;
                 }
             }
-
             if ($value > $actualNode->getValue()) {
                 $actualNode = $actualNode->getRight();
                 if ($actualNode == null) {
@@ -112,7 +108,5 @@ class BinarySearchTree
         $array = array_diff($arr,[$item]);
 
         $this->buildTree($array);
-
     }
-
 }
